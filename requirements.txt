@@ -2,3 +2,4 @@ keras
 Flask
 numpy
 Gunicorn
+tensorflow
