@@ -1,4 +1,4 @@
-from flask import Flask, jsonify, render_template,request
+from flask import Flask, jsonify,request
 import time
 
 from keras.models import load_model
@@ -16,7 +16,6 @@ def index_mapping(idx):
         if val == idx:
             return key
     return 'none'
-
 
 def json_reply(idx):
     with open('dataset.json', 'r') as outputfile:
